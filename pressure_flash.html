@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PTAC 1332 Chapter 2 Pressure Vocabulary Review</title>
+<style>
+  :root{
+    --bg1:#07182d;--bg2:#0c3b5c;--card:#ffffff;--ink:#162133;--muted:#5b677a;
+    --accent:#00a9ce;--accent2:#f7b731;--good:#2ecc71;--bad:#e74c3c;--purple:#7c5cff;
+    --shadow:0 18px 45px rgba(0,0,0,.25);--radius:22px;
+  }
+  *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at top left,#135f8f 0%,var(--bg1) 34%,#04101f 100%);color:var(--ink);min-height:100vh}
+  header{padding:32px 18px 18px;color:white;text-align:center;position:relative;overflow:hidden}
+  header:before{content:"";position:absolute;inset:-80px;background:linear-gradient(120deg,transparent,rgba(255,255,255,.12),transparent);transform:rotate(-8deg)}
+  h1{margin:0;font-size:clamp(2rem,4vw,4rem);letter-spacing:-1px} .subtitle{max-width:900px;margin:12px auto 0;font-size:1.08rem;opacity:.92;line-height:1.5}
+  .teacherbar{max-width:1120px;margin:18px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 12px}
+  .pill{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border-radius:999px;padding:10px 14px;color:white;font-weight:700}
+  main{max-width:1120px;margin:0 auto;padding:20px 14px 60px}.nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0 22px}.nav button,.btn{border:0;border-radius:999px;padding:12px 16px;font-weight:800;cursor:pointer;background:white;color:#06354e;box-shadow:0 8px 18px rgba(0,0,0,.18);transition:.15s}.nav button:hover,.btn:hover{transform:translateY(-2px)}.nav button.active{background:var(--accent2);color:#2b2100}
+  section{display:none;background:rgba(255,255,255,.94);border-radius:var(--radius);padding:24px;margin-bottom:22px;box-shadow:var(--shadow)}section.active{display:block}.section-title{display:flex;align-items:center;gap:12px;margin:0 0 6px;font-size:1.7rem}.badge{background:linear-gradient(135deg,var(--accent),var(--purple));color:white;border-radius:14px;padding:8px 11px}.directions{color:var(--muted);margin-top:4px;line-height:1.5}.grid{display:grid;gap:16px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}@media(max-width:760px){.two,.three,.teacherbar{grid-template-columns:1fr}.pill{border-radius:16px}.section-title{font-size:1.35rem}}
+  .meter{height:20px;background:#dceaf1;border-radius:999px;overflow:hidden;border:2px solid #c5dce7}.meter span{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--good),var(--accent2));transition:.3s}.score{font-weight:900;color:#06354e}.card{background:#f8fbfd;border:2px solid #dbe9f0;border-radius:18px;padding:18px}.flashcard{min-height:260px;display:grid;place-items:center;text-align:center;cursor:pointer;background:linear-gradient(145deg,#ffffff,#eaf7fb);border:3px solid #ccecf5}.term{font-size:2.2rem;font-weight:900;color:#06354e}.definition{font-size:1.2rem;line-height:1.55}.hint{font-size:.92rem;color:var(--muted);margin-top:10px}.small{font-size:.92rem;color:var(--muted)}
+  .matchwrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:800px){.matchwrap{grid-template-columns:1fr}}.item,.drop{padding:14px;border-radius:14px;margin:9px 0;border:2px solid #d5e5ee;background:white}.item{cursor:grab;font-weight:800;box-shadow:0 5px 13px rgba(0,0,0,.08)}.drop{min-height:56px;background:#f3f9fc}.drop.over{border-color:var(--accent);background:#e6f8fc}.drop.correct{border-color:var(--good);background:#eafaf1}.drop.wrong{border-color:var(--bad);background:#fff0ee}.choice{display:block;width:100%;text-align:left;margin:10px 0;padding:13px 14px;border:2px solid #dae8ef;background:white;border-radius:14px;cursor:pointer}.choice.correct{border-color:var(--good);background:#ecfff4}.choice.wrong{border-color:var(--bad);background:#fff0ee}.scenario{border-left:8px solid var(--accent);background:#f6fbfd;padding:18px;border-radius:16px;margin:14px 0}.tag{display:inline-block;background:#eef3ff;color:#263d8f;border-radius:999px;padding:5px 9px;font-weight:800;font-size:.83rem;margin:4px}.inputrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.inputrow input,.inputrow select{padding:12px;border:2px solid #d5e5ee;border-radius:12px;font-size:1rem}.resultbox{font-size:1.2rem;font-weight:900;padding:16px;border-radius:14px;background:#effbff;border:2px dashed var(--accent);margin-top:12px}.leader{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}.wordbank{display:flex;flex-wrap:wrap;gap:8px}.wordbank span{background:#06354e;color:white;padding:8px 10px;border-radius:999px;font-weight:800}.blank{display:inline-block;min-width:150px;border-bottom:3px solid #06354e;padding:2px 6px}.footer-note{color:white;text-align:center;opacity:.9;margin-top:10px}.print{background:#ffffff1f;color:white;border:1px solid #ffffff55}.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden}.confetti i{position:absolute;width:10px;height:16px;background:var(--accent2);animation:fall 950ms linear forwards}@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Pressure Vocabulary Challenge</h1>
+  <p class="subtitle">PTAC 1332 · Process Instrumentation · Chapter 2 Review Activity<br/>Built for Lamar Institute of Technology process operations students.</p>
+  <div class="teacherbar">
+    <div class="pill">⏱ 35–50 minutes</div><div class="pill">👥 Pairs or teams</div><div class="pill">🛢 Process examples</div><div class="pill">🏁 Auto-scored practice</div>
+  </div>
+</header>
+<main>
+  <div class="nav" id="nav"></div>
+  <section id="start" class="active">
+    <h2 class="section-title"><span class="badge">1</span> Launch Briefing</h2>
+    <p class="directions">Students rotate through five quick challenges. The goal is not just memorizing terms, but using vocabulary the way an operator or instrument technician would use it during troubleshooting.</p>
+    <div class="grid three">
+      <div class="card"><h3>Instructor Setup</h3><p>Project this page or have students open it on laptops. Use teams of 2–3. Award points for correct answers and strong explanations.</p></div>
+      <div class="card"><h3>Student Mission</h3><p>Identify pressure terms, match definitions, interpret instrument situations, convert common units, and explain field readings.</p></div>
+      <div class="card"><h3>Vocabulary Focus</h3><p>Pressure, force, area, gauge pressure, absolute pressure, vacuum, differential pressure, manometer, transmitter, deadweight tester, hydrostatic head, span, range, and calibration.</p></div>
+    </div>
+    <p class="small">Source context: ISBN 9780135213933 corresponds to <em>Process Instrumentation</em>, 2nd edition, by NAPTA, published by Pearson. This activity uses original, instructor-created review wording.</p>
+  </section>
+  <section id="flash">
+    <h2 class="section-title"><span class="badge">2</span> Flip the Gauge</h2>
+    <p class="directions">Click the card to flip between a vocabulary term and a practical definition. Use “I knew it” only after your partner explains it aloud.</p>
+    <div class="grid two"><div class="card flashcard" id="flashcard" onclick="flipCard()"><div><div class="term" id="flashTerm"></div><div class="hint">Click to flip</div></div></div><div class="card"><div class="leader"><h3>Flashcard Progress</h3><span class="score" id="flashScore">0 / 0</span></div><div class="meter"><span id="flashMeter"></span></div><br/><button class="btn" onclick="nextCard(true)">I knew it ✅</button> <button class="btn" onclick="nextCard(false)">Review again 🔁</button><p class="small">Prompt students to give a plant example: vessel, pump discharge, exchanger, column, tank, or instrument air.</p></div></div>
+  </section>
+  <section id="match">
+    <h2 class="section-title"><span class="badge">3</span> Drag-and-Drop Match-Up</h2>
+    <p class="directions">Drag each term to the best description. When all boxes are filled, check your work.</p>
+    <div class="matchwrap"><div><h3>Terms</h3><div id="terms"></div></div><div><h3>Descriptions</h3><div id="drops"></div></div></div>
+    <button class="btn" onclick="checkMatch()">Check Matches</button> <button class="btn" onclick="resetMatch()">Reset</button><p class="score" id="matchScore"></p>
+  </section>
+  <section id="unit">
+    <h2 class="section-title"><span class="badge">4</span> Pressure Unit Lab</h2>
+    <p class="directions">Use the mini-converter, then answer the operator question. This helps students connect vocabulary to actual readings.</p>
+    <div class="grid two"><div class="card"><h3>Quick Converter</h3><div class="inputrow"><input id="val" type="number" value="50" step="any"><select id="from"><option>psig</option><option>kPa</option><option>bar</option><option>inHg vacuum</option></select><span>to</span><select id="to"><option>kPa</option><option>psig</option><option>bar</option><option>inHg vacuum</option></select><button class="btn" onclick="convert()">Convert</button></div><div class="resultbox" id="convResult">50 psig ≈ 344.74 kPa</div><p class="small">Approximate classroom conversions. Use plant procedures and calibrated references for real work.</p></div><div class="card"><h3>Gauge vs. Absolute</h3><p>A pressure gauge on a vessel reads <strong>35 psig</strong>. Atmospheric pressure is approximately <strong>14.7 psi</strong>.</p><button class="choice" onclick="qa(this,true)">Absolute pressure is about 49.7 psia.</button><button class="choice" onclick="qa(this,false)">Absolute pressure is 35 psia.</button><button class="choice" onclick="qa(this,false)">Absolute pressure is 20.3 psia.</button><div id="qaFeedback" class="small"></div></div></div>
+  </section>
+  <section id="scenario">
+    <h2 class="section-title"><span class="badge">5</span> Control Room Scenario</h2>
+    <p class="directions">Read each mini-scenario and choose the vocabulary term that best explains what is happening.</p><div id="scenarios"></div><button class="btn" onclick="gradeScenarios()">Grade Scenario Round</button><p class="score" id="scenarioScore"></p>
+  </section>
+  <section id="exit">
+    <h2 class="section-title"><span class="badge">6</span> Exit Ticket: Talk Like a Technician</h2>
+    <p class="directions">Students complete these aloud or on paper. They require using vocabulary in context.</p><div class="card"><div class="wordbank"><span>range</span><span>span</span><span>zero</span><span>differential pressure</span><span>hydrostatic head</span><span>vacuum</span><span>absolute pressure</span><span>calibration</span></div><ol><li>The lowest value of an instrument’s measurement limits is its <span class="blank"></span>.</li><li>The difference between upper and lower measurement limits is the <span class="blank"></span>.</li><li>A transmitter across an orifice plate commonly measures <span class="blank"></span>.</li><li>A tall tank creates pressure at the bottom because of <span class="blank"></span>.</li><li>A reading below atmospheric pressure is often described as <span class="blank"></span>.</li></ol></div><br/><button class="btn" onclick="window.print()">Print / Save Activity</button><button class="btn" onclick="celebrate()">Celebrate Completion 🎉</button>
+  </section>
+  <p class="footer-note">Designed as an original instructional review for PTAC 1332. Edit terms in the JavaScript arrays to align exactly with your course notes.</p>
+</main><div class="confetti" id="confetti"></div>
+<script>
+const tabs=[['start','Launch'],['flash','Flashcards'],['match','Match'],['unit','Unit Lab'],['scenario','Scenarios'],['exit','Exit Ticket']];
+const vocab=[
+{t:'Pressure',d:'Force applied over a unit area; in process plants, often measured in psi, kPa, bar, or inches of water/mercury.'},
+{t:'Gauge Pressure',d:'Pressure measured relative to local atmospheric pressure; commonly shown as psig.'},
+{t:'Absolute Pressure',d:'Pressure measured relative to a perfect vacuum; commonly shown as psia.'},
+{t:'Vacuum',d:'A pressure condition below atmospheric pressure.'},
+{t:'Differential Pressure',d:'The difference between two pressure points; often used for flow, filter condition, or level measurement.'},
+{t:'Hydrostatic Head',d:'Pressure created by the height and density of a liquid column.'},
+{t:'Manometer',d:'A simple pressure device that uses a liquid column height difference to show pressure.'},
+{t:'Pressure Transmitter',d:'An instrument that senses pressure and sends a signal, often 4–20 mA, to a control system.'},
+{t:'Deadweight Tester',d:'A pressure calibration device that uses known weights and piston area to create a known pressure.'},
+{t:'Range',d:'The lower and upper measurement limits of an instrument.'},
+{t:'Span',d:'The difference between the upper range value and lower range value.'},
+{t:'Calibration',d:'Comparing and adjusting an instrument so its output matches a known standard.'}
+];
+let idx=0,flipped=false,known=0,seen=0;
+function setupNav(){document.getElementById('nav').innerHTML=tabs.map((x,i)=>`<button onclick="show('${x[0]}')" id="nav_${x[0]}" class="${i==0?'active':''}">${x[1]}</button>`).join('')}
+function show(id){document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));document.getElementById('nav_'+id).classList.add('active')}
+function renderCard(){flipped=false;document.getElementById('flashTerm').innerHTML=vocab[idx].t;document.querySelector('#flashcard .hint').textContent='Click to flip';document.getElementById('flashScore').textContent=`${known} / ${vocab.length}`;document.getElementById('flashMeter').style.width=(known/vocab.length*100)+'%'}
+function flipCard(){flipped=!flipped;document.getElementById('flashTerm').innerHTML=flipped?`<div class='definition'>${vocab[idx].d}</div>`:vocab[idx].t;document.querySelector('#flashcard .hint').textContent=flipped?'Click to see term':'Click to flip'}
+function nextCard(k){seen++; if(k) known=Math.min(vocab.length,known+1); idx=(idx+1)%vocab.length; renderCard(); if(known===vocab.length) celebrate()}
+const matchData=[['Absolute Pressure','Measured from perfect vacuum'],['Gauge Pressure','Measured relative to atmospheric pressure'],['Differential Pressure','Difference between two pressure points'],['Span','Upper range value minus lower range value'],['Hydrostatic Head','Pressure due to liquid height and density'],['Calibration','Comparison to a known standard']];
+function resetMatch(){let terms=[...matchData].sort(()=>Math.random()-.5);document.getElementById('terms').innerHTML=terms.map(x=>`<div class='item' draggable='true' data-term='${x[0]}'>${x[0]}</div>`).join('');let drops=[...matchData].sort(()=>Math.random()-.5);document.getElementById('drops').innerHTML=drops.map(x=>`<div class='drop' data-answer='${x[0]}'>${x[1]}</div>`).join('');document.getElementById('matchScore').textContent='';dragSetup()}
+function dragSetup(){document.querySelectorAll('.item').forEach(i=>i.addEventListener('dragstart',e=>e.dataTransfer.setData('text',e.target.dataset.term)));document.querySelectorAll('.drop').forEach(d=>{d.addEventListener('dragover',e=>{e.preventDefault();d.classList.add('over')});d.addEventListener('dragleave',()=>d.classList.remove('over'));d.addEventListener('drop',e=>{e.preventDefault();d.classList.remove('over');let term=e.dataTransfer.getData('text');d.textContent=d.textContent.replace(/ → .*/,'')+' → '+term;d.dataset.term=term})})}
+function checkMatch(){let correct=0;document.querySelectorAll('.drop').forEach(d=>{d.classList.remove('correct','wrong');if(d.dataset.term===d.dataset.answer){correct++;d.classList.add('correct')}else d.classList.add('wrong')});document.getElementById('matchScore').textContent=`Score: ${correct} / ${matchData.length}`; if(correct===matchData.length) celebrate()}
+function convert(){let v=parseFloat(document.getElementById('val').value), f=document.getElementById('from').value, t=document.getElementById('to').value; let psi;
+if(f==='psig') psi=v; if(f==='kPa') psi=v/6.89476; if(f==='bar') psi=v*14.5038; if(f==='inHg vacuum') psi=-v*0.491154;
+let out=psi; if(t==='kPa') out=psi*6.89476; if(t==='bar') out=psi/14.5038; if(t==='inHg vacuum') out=-psi/0.491154; if(t==='psig') out=psi;
+document.getElementById('convResult').textContent=`${v} ${f} ≈ ${out.toFixed(2)} ${t}`}
+function qa(btn,ok){document.querySelectorAll('#unit .choice').forEach(b=>b.disabled=true);btn.classList.add(ok?'correct':'wrong');document.getElementById('qaFeedback').textContent=ok?'Correct: psia = psig + atmospheric pressure.':'Try again next time: psia = psig + atmospheric pressure.'; if(ok) celebrate()}
+const scens=[
+{q:'A filter inlet is 72 psig and outlet is 48 psig. The operator is most interested in:',a:'Differential Pressure',c:['Absolute Pressure','Differential Pressure','Deadweight Tester']},
+{q:'A level transmitter on a tank works because a taller liquid column creates more bottom pressure. This is:',a:'Hydrostatic Head',c:['Vacuum','Hydrostatic Head','Span']},
+{q:'A pressure transmitter is checked at 0, 25, 50, 75, and 100 psi against a certified standard. This is:',a:'Calibration',c:['Calibration','Range','Impulse Line']},
+{q:'A 0–150 psig transmitter has a measurement difference of 150 psi from low to high. That difference is the:',a:'Span',c:['Zero','Span','Atmosphere']}
+];
+function renderScenarios(){document.getElementById('scenarios').innerHTML=scens.map((s,i)=>`<div class='scenario'><strong>Scenario ${i+1}:</strong> ${s.q}<br>${s.c.map(c=>`<label class='tag'><input type='radio' name='s${i}' value='${c}'> ${c}</label>`).join('')}</div>`).join('')}
+function gradeScenarios(){let c=0;scens.forEach((s,i)=>{let picked=document.querySelector(`input[name=s${i}]:checked`);if(picked&&picked.value===s.a)c++});document.getElementById('scenarioScore').textContent=`Scenario Score: ${c} / ${scens.length}`; if(c===scens.length) celebrate()}
+function celebrate(){let box=document.getElementById('confetti');for(let i=0;i<70;i++){let e=document.createElement('i');e.style.left=Math.random()*100+'vw';e.style.top='-20px';e.style.background=['#00a9ce','#f7b731','#2ecc71','#7c5cff','#e74c3c'][Math.floor(Math.random()*5)];e.style.animationDelay=(Math.random()*300)+'ms';box.appendChild(e);setTimeout(()=>e.remove(),1300)}}
+setupNav();renderCard();resetMatch();convert();renderScenarios();
+</script>
+</body>
+</html>
